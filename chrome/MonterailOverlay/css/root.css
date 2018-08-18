@@ -1,0 +1,251 @@
+@import url(chrome://MonterailOverlay/skin/css/icons/messanger.css);
+@import url(chrome://MonterailOverlay/skin/css/icons/folder.css);
+
+@font-face {
+    font-family: 'LightSans';
+    src: url('../fonts/encodesansnarrow-light.woff2') format('woff2'), url('../fonts/encodesansnarrow-light.woff') format('woff'), url('../fonts/encodesansnarrow-light.ttf') format('truetype'), url('../fonts/encodesansnarrow-light.svg#encode_sans_narrowlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* Background color Navigation & Folder Pane */
+    --background-color: #3c3b37;
+	--background-color-inactive: #494844;
+	
+    /* Background Toolbox  & Compose*/
+	--background-color-light: #F2F1F0;
+	
+    /* Background Folder in Folder Pane */
+    --folder-background-color-selected: #F07746;
+	--folder-background-color-hover: #f5f5f5;
+	
+	/* Fonts */
+    --default-font: LightSans;
+	--message-list-text-color: #4C4C4C;
+	
+	/*Message row & Folder row height */
+    --message-list-row-height: 40px;
+	--folder-tree-row-height: 25px;
+	
+    /* Scollbar */
+    --scrollbar-thumb-color: rgba(127, 127, 127, 0.5);
+	--scrollbar-thumb-hover-color: #F07746;
+	
+    /* Message Headers */
+    --subject-line-font-size: 150%;
+    --headers-background-color: #F2F1F0;
+    --headers-text-color: var(--message-list-text-color);
+}
+
+* {
+    font-family: var(--default-font);
+}
+
+#mail-toolbar-menubar2,
+#mail-bar3 #MsgHeadersToolbar,
+#addrbook-toolbar-menubar2,
+#ab-bar2,
+#FormatToolbar {
+    -moz-appearance: none !important;
+    border: none !important;
+}
+
+toolbar>toolbarbutton {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+box,
+hbox,
+vbox,
+toolbox {
+    box-shadow: none !important;
+}
+
+splitter {
+    border-color: rgba(127, 127, 127, 0.25) !important;
+}
+
+.mail-toolbox::after,
+.contentTabToolbox::after {
+    content: "";
+    display: none !important;
+    height: 0px !important;
+}
+
+menu[disabled="true"] label,
+menuitem[disabled="true"] label,
+.splitmenu-menuitem[disabled="true"] label,
+menucaption[disabled="true"] label,
+.chromeclass-toolbar menu[disabled="true"] label,
+.chromeclass-toolbar menuitem[disabled="true"] label,
+.chromeclass-toolbar .splitmenu-menuitem[disabled="true"] label,
+.chromeclass-toolbar menucaption[disabled="true"] label {
+    color: grey !important;
+}
+
+/*     Folder Tree    */
+
+treechildren:-moz-tree-twisty {
+    width: 12px !important;
+    -moz-image-region: rect(0px 12px 12px 0px) !important;
+    -moz-appearance: none !important;
+    list-style-type: image !important;
+}
+
+#folderTree>hbox {
+    margin-top: 30px !important;
+}
+
+#folderTree>treechildren::-moz-tree-row {
+	margin-top: 0px !important;
+}
+
+#folderTree>treechildren::-moz-tree-row {
+    height: var(--folder-tree-row-height) !important;
+}
+
+#folderTree>treechildren::-moz-tree-row(selected) {
+    border: none !important;
+}
+
+#folderTree>treechildren::-moz-tree-cell-text(folderNameCol, newMessages-true),
+#folderTree>treechildren::-moz-tree-cell-text(folderNameCol, closed, subfoldersHaveUnreadMessages-true) {
+    color: inherit !important;
+    font-style: italic !important;
+}
+
+/*    Thread tree    */
+
+#threadTree>treechildren::-moz-tree-row {
+    height: var(--message-list-row-height) !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.2) !important;
+}
+
+#threadTree>treechildren::-moz-tree-row(selected) {
+    border: none !important;
+}
+
+#threadCols,
+#threadCols treecol,
+#threadCols treecolpicker {
+    -moz-appearance: none !important;
+}
+
+#threadCols treecol[sortDirection="ascending"] .treecol-sortdirection {
+    -moz-appearance: button-arrow-up !important;
+}
+
+#threadCols treecol[sortDirection="descending"] .treecol-sortdirection {
+    -moz-appearance: button-arrow-down !important;
+}
+
+#threadCols treecol,
+#threadCols treecolpicker {
+    color: var(--message-list-header-text-color) !important;
+    border: none !important;
+    padding: 3px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+    border-left: 1px solid rgba(127, 127, 127, 0.4) !important;
+    min-width: 21px !important;
+}
+
+#threadPane {
+    -moz-appearance: none !important;
+}
+
+/*    Scrollbar    */
+
+scrollbar {
+    margin-right: 5px !important;
+    width: 10px !important;
+    max-width: 10px !important;
+    -moz-appearance: none !important;
+    background: none !important;
+    border: none !important;
+}
+
+srollbarbutton {
+    width: 10px !important;
+    max-width: 10px !important;
+}
+
+slider {
+    width: 10px !important;
+    max-width: 10px !important;
+    -moz-appearance: none !important;
+    background: none !important;
+    border: none !important;
+}
+
+thumb {
+    width: 10px !important;
+    max-width: 10px !important;
+    -moz-appearance: none !important;
+    min-height: 100px !important;
+    border: none !important;
+    background: var(--scrollbar-thumb-color) !important;
+}
+
+thumb:hover {
+    background: var(--scrollbar-thumb-hover-color) !important;
+}
+
+/*    Msg Header    */
+
+#msgHeaderView {
+    color: var(--headers-text-color) !important;
+    background-color: var(--headers-background-color) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
+}
+
+.msgHeaderView-button {
+    min-width: 0px !important;
+    border-color: transparent !important;
+    background-color: transparent !important;
+    margin: 0px !important;
+}
+
+.msgHeaderView-button:hover {
+    border-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.msgHeaderView-button>label {
+    display: none;
+}
+
+#expandedHeader2Rows row {
+    display: block !important;
+}
+
+#expandedHeaderRows row *,
+#expandedHeader2Rows row * {
+    color: var(--headers-text-color) !important;
+}
+
+#expandedsubjectLabel,
+#expandedfromLabel {
+    display: none !important;
+}
+
+#expandedHeader2Rows #expandedreply-toRow {
+    display: none !important;
+}
+
+#expandedsubjectBox .headerValue {
+    font-size: var(--subject-line-font-size) !important;
+}
+
+.emailStar {
+    margin-inline-start: 2px !important;
+}
+
+menuseparator {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}

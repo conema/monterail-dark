@@ -1,0 +1,45 @@
+@import url(chrome://os_special/skin/compose.css);
+@import url(chrome://MonterailOverlay/skin/css/root.css);
+@import url(chrome://MonterailOverlay/skin/css/icons/compose.css);
+
+#compose-toolbox>#compose-toolbar-menubar2:not(:-moz-lwtheme),
+#headers-box>#MsgHeadersToolbar:not(:-moz-lwtheme),
+#FormatToolbox>#FormatToolbar:not(:-moz-lwtheme) {
+    color: var(--message-list-text-color);
+    background-color: var(--background-color-light);
+    -moz-appearance: none;
+}
+
+#compose-toolbox>#composeToolbar2:not(:-moz-lwtheme){
+    background-color: var(--background-color);
+    color: #fff;
+    -moz-appearance: none;
+}
+
+.toolbarbutton-1 {
+    -moz-context-properties: fill;
+}
+
+.toolbarbutton-1:not(:-moz-lwtheme),
+.toolbarbutton-menubutton-button:not(:-moz-lwtheme) {
+    color: #fff;
+    fill: #fff;
+}
+
+toolbar[brighttext]>.toolbarbutton-1 {
+    fill: #fff;
+}
+
+.toolbarbutton-1:-moz-window-inactive .toolbarbutton-icon,
+.toolbarbutton-1:-moz-window-inactive>.toolbarbutton-text,
+.toolbarbutton-menubutton-button:-moz-window-inactive>.toolbarbutton-icon,
+.toolbarbutton-menubutton-button:-moz-window-inactive>.toolbarbutton-text {
+    opacity: 0.5;
+}
+
+.toolbarbutton-menubutton-button>.toolbarbutton-icon,
+.toolbarbutton-1 .toolbarbutton-icon {
+    width: 16px !important;
+    height: 16px !important;
+    margin: 1px !important;
+}

@@ -1,0 +1,146 @@
+/* :::: Credit where credit is due :::: */
+/* Sharebird: light-weight theme idea */
+
+@import url(chrome://os_special/skin/messenger.css);
+@import url(chrome://MonterailOverlay/skin/css/root.css);
+
+#messengerWindow>#navigation-toolbox:not(:-moz-lwtheme):not(:-moz-window-inactive) {
+    color: #fff !important;
+    background-color: var(--background-color) !important;
+}
+
+#messengerWindow>#navigation-toolbox:not(:-moz-lwtheme):-moz-window-inactive {
+    color: #ddd !important;
+    background-color: var(--background-color-inactive) !important;
+}
+
+#menubar-items>#mail-menubar>menu:not(:-moz-lwtheme) {
+    -moz-appearance: none;
+    border-style: none;
+    color: inherit !important;
+}
+
+#menubar-items>#mail-menubar>menu[_moz-menuactive="true"]:not([disabled="true"]):not(:-moz-lwtheme) {
+    background-color: hsla(0, 0%, 0%, .12);
+}
+
+#menubar-items>#mail-menubar>menu[_moz-menuactive="true"][open="true"]:not([disabled="true"]):not(:-moz-lwtheme) {
+    background-color: hsla(0, 0%, 0%, .22);
+}
+
+.mail-toolbox:not(:-moz-lwtheme),
+#mailContent>#mail-toolbox:not(:-moz-lwtheme),
+.contentTabInstance>.contentTabToolbox:not(:-moz-lwtheme) {
+    box-shadow: none;
+    background-image: none;
+    background-color: var(--background-color-light);
+    color: var(--message-list-text-color);
+}
+
+#attachmentView>#attachmentBar {
+    color: var(--message-list-text-color);
+    background-color: #fcfcfc;
+}
+
+.tabmail-tab .tab-background-middle[selected=true] {
+    --fgTabBackgroundColor: #fff;
+    --fgTabTexture: linear-gradient(transparent, transparent);
+}
+
+.tabmail-tab:not([selected]):not(:-moz-lwtheme) {
+    color: inherit !important;
+}
+
+.treecol-icon,
+.tabmail-tab,
+.toolbarbutton-1 {
+    -moz-context-properties: fill;
+}
+
+.toolbarbutton-1:not(:-moz-lwtheme),
+.toolbarbutton-menubutton-button:not(:-moz-lwtheme) {
+    color: #666;
+    fill: #666;
+}
+
+#navigation-toolbox .toolbarbutton-1:not(:-moz-lwtheme),
+#navigation-toolbox .toolbarbutton-menubutton-button:not(:-moz-lwtheme) {
+    color: #fff;
+    fill: #fff;
+}
+
+.tabmail-tab[selected]:not(:-moz-lwtheme):-moz-window-inactive .tab-icon-image,
+.tabmail-tab[selected]:not(:-moz-lwtheme):-moz-window-inactive .tab-label-container,
+.toolbarbutton-1:-moz-window-inactive .toolbarbutton-icon,
+.toolbarbutton-1:-moz-window-inactive>.toolbarbutton-text,
+.toolbarbutton-menubutton-button:-moz-window-inactive>.toolbarbutton-icon,
+.toolbarbutton-menubutton-button:-moz-window-inactive>.toolbarbutton-text {
+    opacity: 0.5;
+}
+
+.toolbarbutton-menubutton-button>.toolbarbutton-icon,
+.toolbarbutton-1 .toolbarbutton-icon {
+    width: 16px !important;
+    height: 16px !important;
+    margin: 1px !important;
+    padding: 0 !important;
+}
+
+toolbar>#button-chat[unreadMessages="true"] {
+    fill: #2d9aaf;
+}
+
+toolbar[brighttext]>.toolbarbutton-1 {
+    fill: #fff;
+}
+
+#quick-filter-bar {
+    background-color: var(--background-color-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) inset;
+}
+
+#singlemessage>#msgHeaderView {
+    background-color: #fcfcfc;
+}
+
+/* foldertree & threadtree */
+
+#folderPaneBox>#folderTree {
+    background-color: var(--background-color);
+}
+
+#folderTree>treechildren,
+#threadTree>treechildren {
+    --treechildren-selectedBackground: var(--folder-background-color-selected);
+    --treechildren-selectedFocusBackground: var(--folder-background-color-selected);
+    --treechildren-selectedFocusCurrentBackground: var(--folder-background-color-selected);
+    --treechildren-hoverBackground: var(--folder-background-color-hover);
+    --treechildren-hoverCurrentBackground: var(--folder-background-color-hover);
+    --treechildren-hoverSelectedBackground: var(--folder-background-color-hover);
+}
+
+#folderPaneBox>#folderTree:-moz-window-inactive {
+    background-color: var(--background-color-inactive);
+}
+
+#threadContentArea>#threadTree {
+    background-color: #fff;
+}
+
+#threadTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected),
+#threadTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected, focus),
+#folderTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text,
+#folderTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected, focus) {
+    color: #fff;
+}
+
+#threadTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(hover),
+#folderTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(hover) {
+    color: #000 !important;
+}
+
+#rssSubscriptionsList>treechildren::-moz-tree-image,
+#folderPaneBox>#folderTree>treechildren::-moz-tree-image {
+    width: 14px;
+    height: 14px;
+}

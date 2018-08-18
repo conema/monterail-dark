@@ -5,11 +5,11 @@ _Monterail Dark, a Thunderbird theme inspired by the mockup of Monterail_
 This is a full theme for the Thunderbird e-mail client, inspired by [Monterail](https://monterail.com/blog/2016/the-power-of-email-clients-why-did-we-redesign-thunderbird) mockup and by [spymastermatt](https://github.com/spymastermatt/thunderbird-monterail)'s dark theme. As opposed to the spymastermatt's version, this theme can be **installed easily and quickly with an addon** and it's **fully compatible with Thunderbird 60.x**.
 
 ## Installation
-### Manual
-The first step is to [download]() the theme (in .xpi extension). An extensive guide for install the xpi file can be found [here](https://support.mozilla.org/en-US/kb/installing-addon-thunderbird) on the Mozilla support site, starting from "A slightly less ideal case". The Addon Manager can be found by clicking the menu icon ![menu](https://prod-cdn.sumo.mozilla.net/uploads/gallery/images/2017-10-22-15-37-15-18c775.png) (on the right, next to the search bar) followed by Add-ons and click on the Themes panel on the left.
+### Manual (from source)
+The first step is to [download](https://github.com/conema/monterail-dark/archive/master.zip) the theme from GitHub and change the extension to ".xpi". An extensive guide for install the xpi file can be found [here](https://support.mozilla.org/en-US/kb/installing-addon-thunderbird) on the Mozilla support site, starting from "A slightly less ideal case". The Addon Manager can be found by clicking the menu icon ![menu](https://prod-cdn.sumo.mozilla.net/uploads/gallery/images/2017-10-22-15-37-15-18c775.png) (on the right, next to the search bar) followed by Add-ons and click on the Themes panel on the left.
 
-### Theme market
-The addon will be published in the thunderbird theme market as soon as possibile, to allow a simpler download and update.
+### Theme market (**recommended procedure**)
+The theme can be directly downloaded from the Thunderbird Add-on market, it can be found by searching "Monterail Dark" directly in the add-on page of thunderbird or [there](https://addons.thunderbird.net/en-US/thunderbird/addon/monterail-dark/).
 
 ## Screenshots
 ![screen1](https://user-images.githubusercontent.com/12801153/44290442-039a8180-a279-11e8-9a04-574cc991f012.jpg)
@@ -18,7 +18,7 @@ The addon will be published in the thunderbird theme market as soon as possibile
 ## FAQ
 * The Light/Full Dark version will be released?
 
-Yes, but for the moment it is better to completely finish the dark version, after that, the creation of others version will fast as a snap of fingers.
+Yes, but for the moment it is better to completely finish the dark version, after that, the creation of other versions will fast as a snap of fingers.
 
 * The original Monterail version will be released?
 

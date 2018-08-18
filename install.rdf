@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest"
+               em:id="MonterailDark@conema.me"
+               em:name="Monterail Dark"
+               em:version="1.0"
+               em:description="Monterail Dark, a Thunderbird theme inspired by the mockup of Monterail"
+               em:creator="Emanuele Concas"
+               em:internalName="Monterail"
+               em:skinnable="true"
+               em:type="4">
+    <em:targetApplication>
+      <Description em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
+                   em:minVersion="60.0"
+                   em:maxVersion="60.*"/>
+    </em:targetApplication>
+  </Description>
+</RDF>

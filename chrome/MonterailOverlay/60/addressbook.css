@@ -1,0 +1,17 @@
+#dirTree > treechildren {
+  --treechildren-selectedBackground: rgba(255,255,255,.2);
+  --treechildren-selectedFocusBackground: rgba(255,255,255,.3);
+  --treechildren-selectedFocusCurrentBackground: rgba(255,255,255,.35);
+  --treechildren-hoverBackground: rgba(255,255,255,.1);
+  --treechildren-hoverCurrentBackground: rgba(255,255,255,.3);
+  --treechildren-hoverSelectedBackground: rgba(255,255,255,.35);
+}
+
+#abResultsTree > treechildren {
+  --treechildren-selectedBackground: var(--folder-background-color-selected);
+  --treechildren-selectedFocusBackground: var(--folder-background-color-selected);
+  --treechildren-selectedFocusCurrentBackground: var(--folder-background-color-selected);
+  --treechildren-hoverBackground: var(--folder-background-color-hover);
+  --treechildren-hoverCurrentBackground: var(--folder-background-color-hover);
+  --treechildren-hoverSelectedBackground: var(--folder-background-color-hover);
+}

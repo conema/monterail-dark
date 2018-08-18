@@ -1,0 +1,43 @@
+#button-send {
+    list-style-image: url("chrome:../../icons/Composer_Send.svg") !important;
+}
+
+#button-contacts {
+    list-style-image: url("chrome:../../icons/Composer_Contacts.svg") !important;
+}
+
+#spellingButton {
+    list-style-image: url("chrome:../../icons/Composer_Spelling.svg") !important;
+}
+
+#button-attach {
+    list-style-image: url("chrome:../../icons/Composer_Attach.svg") !important;
+}
+
+#button-security {
+    list-style-image: url("chrome:../../icons/Composer_Security.svg") !important;
+}
+
+#button-save {
+    list-style-image: url("chrome:../../icons/save.svg") !important;
+}
+
+#quoteButton {
+    list-style-image: url("chrome:../../icons/Composer_Quote.svg") !important;
+}
+
+#cut-button {
+    list-style-image: url("chrome:../../icons/cut.svg") !important;
+}
+
+#copy-button {
+    list-style-image: url("chrome:../../icons/copy.svg") !important;
+}
+
+#paste-button {
+    list-style-image: url("chrome:../../icons/paste.svg") !important;
+}
+
+#button-print {
+    list-style-image: url("chrome:../../icons/print.svg") !important;
+}
