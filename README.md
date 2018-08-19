@@ -23,7 +23,7 @@ This seems a know issue of Thunderbird 60 [[1]](https://bugzilla.mozilla.org/sho
     - Linux: `/home/[your linux user]/.thunderbird/[(literally) random letters and numbers].default/`
     - MacOS: `/home/[your macos user]/Library/Thunderbird/Profiles/[(literally) random letters and numbers].default/`
   2. Go to the "extensions" folder, here there should be a file named "MonterailDark@conema.me"
-  3. **While the Thunderbird application is been opened** in background, delete the "MonterailDark@conema.me" file.
+  3. **While the Thunderbird is opened** in background, delete the "MonterailDark@conema.me" file.
   4. Restart Thunderbird and reinstall the theme
   5. Restart Thunderbird again, the theme now should work
 
@@ -42,7 +42,7 @@ Yes and no. Currently the theme have been tested only on Windows 10 and OpenSuse
 
 * With which versions of Thunderbird can I use this theme?
 
-For now only **60.x** is been tested, in the future, backward compatibility to the most requested versions will be added.
+For now only **60.x** and **52.9.1** are been tested, in the future, backward compatibility to the most requested versions will be added.
 
 ## Credits
 This addon is based on [Monterail by Paenglab](https://addons.thunderbird.net/en-US/thunderbird/addon/monterail/), source code is included.
