@@ -11,7 +11,7 @@
                em:type="4">
     <em:targetApplication>
       <Description em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
-                   em:minVersion="60.0"
+                   em:minVersion="52.0"
                    em:maxVersion="60.*"/>
     </em:targetApplication>
   </Description>

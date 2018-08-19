@@ -114,9 +114,16 @@ toolbar[brighttext]>.toolbarbutton-1 {
     --treechildren-selectedBackground: var(--folder-background-color-selected);
     --treechildren-selectedFocusBackground: var(--folder-background-color-selected);
     --treechildren-selectedFocusCurrentBackground: var(--folder-background-color-selected);
+    --treechildren-hoverSelectedBackground: var(--folder-background-color-selected);
+}
+#folderTree>treechildren {
     --treechildren-hoverBackground: var(--folder-background-color-hover);
     --treechildren-hoverCurrentBackground: var(--folder-background-color-hover);
-    --treechildren-hoverSelectedBackground: var(--folder-background-color-hover);
+}
+
+#threadTree>treechildren {
+    --treechildren-hoverBackground: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1));
+    --treechildren-hoverCurrentBackground: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1));
 }
 
 #folderPaneBox>#folderTree:-moz-window-inactive {
@@ -132,11 +139,6 @@ toolbar[brighttext]>.toolbarbutton-1 {
 #folderTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text,
 #folderTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected, focus) {
     color: #fff;
-}
-
-#threadTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(hover),
-#folderTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(hover) {
-    color: #000 !important;
 }
 
 #rssSubscriptionsList>treechildren::-moz-tree-image,

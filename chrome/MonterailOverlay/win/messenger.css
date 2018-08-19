@@ -8,17 +8,17 @@
   --treechildren-hoverColor: transparent;
   --treechildren-selectedBorder: transparent;
   --treechildren-selectedBottomBorder: transparent;
-  --treechildren-selectedImage: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2));
+  --treechildren-selectedImage:  var(--folder-background-color-selected);
   --treechildren-selectedBackground: transparent;
-  --treechildren-currentFocusBorder: rgba(255,255,255,.3);
-  --treechildren-currentFocusBottomBorder: rgba(255,255,255,.3);
+  --treechildren-currentFocusBorder: var(--folder-background-color-selected);
+  --treechildren-currentFocusBottomBorder: var(--folder-background-color-selected);
   --treechildren-selectedFocusBorder: transparent;
   --treechildren-selectedFocusBottomBorder: transparent;
-  --treechildren-selectedFocusImage: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3));
+  --treechildren-selectedFocusImage:  var(--folder-background-color-selected);
   --treechildren-selectedFocusBackground: transparent;
   --treechildren-selectedFocusCurrentBorder: transparent;
   --treechildren-selectedFocusCurrentBottomBorder: transparent;
-  --treechildren-selectedFocusCurrentImage: linear-gradient(rgba(255,255,255,.35), rgba(255,255,255,.35));
+  --treechildren-selectedFocusCurrentImage:  var(--folder-background-color-selected);
   --treechildren-hoverBorder: transparent;
   --treechildren-hoverBottomBorder: transparent;
   --treechildren-hoverImage: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1));
@@ -27,7 +27,7 @@
   --treechildren-hoverCurrentImage: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3));
   --treechildren-hoverSelectedBorder: transparent;
   --treechildren-hoverSelectedBottomBorder: transparent;
-  --treechildren-hoverSelectedImage: linear-gradient(rgba(255,255,255,.35), rgba(255,255,255,.35));
+  --treechildren-hoverSelectedImage: linear-gradient(var(--folder-background-color-selected), var(--folder-background-color-selected));
 }
 
 #threadTree > treechildren {
@@ -40,26 +40,26 @@
   --treechildren-hoverColor: transparent;
   --treechildren-selectedBorder: transparent;
   --treechildren-selectedBottomBorder: transparent;
-  --treechildren-selectedImage: linear-gradient(rgba(45,154,175,1), rgba(45,154,175,1));
+  --treechildren-selectedImage:  var(--folder-background-color-selected);
   --treechildren-selectedBackground: transparent;
-  --treechildren-currentFocusBorder: rgba(0,99,120,.7);
-  --treechildren-currentFocusBottomBorder: rgba(0,99,120,.7);
+  --treechildren-currentFocusBorder: var(--folder-background-color-selected);
+  --treechildren-currentFocusBottomBorder: var(--folder-background-color-selected);
   --treechildren-selectedFocusBorder: transparent;
   --treechildren-selectedFocusBottomBorder: transparent;
-  --treechildren-selectedFocusImage: linear-gradient(rgba(0,99,120,.7), rgba(0,99,120,.7));
+  --treechildren-selectedFocusImage:  var(--folder-background-color-selected);
   --treechildren-selectedFocusBackground: transparent;
   --treechildren-selectedFocusCurrentBorder: transparent;
   --treechildren-selectedFocusCurrentBottomBorder: transparent;
-  --treechildren-selectedFocusCurrentImage: linear-gradient(rgba(0,99,120,1), rgba(0,99,120,1));
+  --treechildren-selectedFocusCurrentImage:  var(--folder-background-color-selected);
   --treechildren-hoverBorder: transparent;
   --treechildren-hoverBottomBorder: transparent;
-  --treechildren-hoverImage: linear-gradient(rgba(0,99,120,.3), rgba(0,99,120,.3));
+  --treechildren-hoverImage: linear-gradient(var(--folder-background-color-hover), var(--folder-background-color-hover));
   --treechildren-hoverCurrentBorder: transparent;
   --treechildren-hoverCurrentBottomBorder: transparent;
-  --treechildren-hoverCurrentImage: linear-gradient(rgba(0,99,120,.7), rgba(0,99,120,.7));
+  --treechildren-hoverCurrentImage: linear-gradient(var(--folder-background-color-hover), var(--folder-background-color-hover));
   --treechildren-hoverSelectedBorder: transparent;
   --treechildren-hoverSelectedBottomBorder: transparent;
-  --treechildren-hoverSelectedImage: linear-gradient(rgba(0,99,120,1), rgba(0,99,120,1));
+  --treechildren-hoverSelectedImage: var(--folder-background-color-selected);
 }
 
 #titlebar-min,
