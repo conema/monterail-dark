@@ -13,5 +13,5 @@
   --treechildren-selectedFocusCurrentBackground: var(--folder-background-color-selected);
   --treechildren-hoverBackground: var(--folder-background-color-hover);
   --treechildren-hoverCurrentBackground: var(--folder-background-color-hover);
-  --treechildren-hoverSelectedBackground: var(--folder-background-color-hover);
+  --treechildren-hoverSelectedBackground: var(--folder-background-color-selected);
 }
