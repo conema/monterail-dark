@@ -10,7 +10,7 @@ style	chrome://calendar/content/calendar-event-dialog.xul			chrome://MonterailOv
 skin	MonterailOverlay	classic/1.0	chrome/MonterailOverlay/classic/
 skin	MonterailOverlay	Monterail	chrome/MonterailOverlay/
 skin	app_version		Monterail	chrome/MonterailOverlay/52/
-#skin	app_version		Monterail	chrome/MonterailOverlay/60/	appversion>=60.0a1
+skin	app_version		Monterail	chrome/MonterailOverlay/60/	appversion>=60a1
 skin	os_special		Monterail	chrome/MonterailOverlay/linux/
 skin	os_special		Monterail	chrome/MonterailOverlay/mac/	os=Darwin
 skin	os_special		Monterail	chrome/MonterailOverlay/win/	os=WINNT

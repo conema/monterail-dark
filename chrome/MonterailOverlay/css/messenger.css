@@ -116,14 +116,16 @@ toolbar[brighttext]>.toolbarbutton-1 {
     --treechildren-selectedFocusCurrentBackground: var(--folder-background-color-selected);
     --treechildren-hoverSelectedBackground: var(--folder-background-color-selected);
 }
-#folderTree>treechildren {
+
+#threadTree>treechildren
+{
     --treechildren-hoverBackground: var(--folder-background-color-hover);
     --treechildren-hoverCurrentBackground: var(--folder-background-color-hover);
 }
 
-#threadTree>treechildren {
-    --treechildren-hoverBackground: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1));
-    --treechildren-hoverCurrentBackground: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1));
+#folderTree>treechildren {
+    --treechildren-hoverBackground: rgba(255,255,255,.1);
+    --treechildren-hoverCurrentBackground: rgba(255,255,255,.1);
 }
 
 #folderPaneBox>#folderTree:-moz-window-inactive {
