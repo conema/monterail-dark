@@ -54,17 +54,15 @@
 }
 
 #folderTree > treechildren:not(.autocomplete-treebody)::-moz-tree-row(hover) {
-  background-color: var(--folder-background-color-hover);
-  opacity: 0.7 !important;
+  background-color: rgba(255,255,255,.1);
 }
 
 #folderTree > treechildren:not(.autocomplete-treebody)::-moz-tree-row(hover, current) {
-  background-color: var(--folder-background-color-hover);
-  opacity: 0.7 !important;
+  background-color: rgba(255,255,255,.1);
 }
 
 #folderTree > treechildren:not(.autocomplete-treebody)::-moz-tree-row(hover, selected) {
-  background-color: var(--folder-background-color-hover);
+  background-color: var(--folder-background-color-selected);
   opacity: 0.7 !important;
 }
 
@@ -109,7 +107,7 @@
 }
 
 #threadTree > treechildren:not(.autocomplete-treebody)::-moz-tree-row(hover, selected) {
-  background-color: var(--folder-background-color-hover);
+  background-color: var(--folder-background-color-selected);
 }
 
 #threadTree > treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected),
