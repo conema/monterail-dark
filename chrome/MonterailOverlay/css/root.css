@@ -16,9 +16,10 @@
     /* Background Toolbox  & Compose*/
 	--background-color-light: #F2F1F0;
 	
-    /* Background Folder in Folder Pane */
-    --folder-background-color-selected: #F07746;
-	--folder-background-color-hover: #f5f5f5;
+    /* Background folder/thread */
+    --thread-background-color: #fff;
+    --tree-background-color-selected: #F07746;
+	--tree-background-color-hover: #f5f5f5;
 	
 	/* Fonts */
     --default-font: LightSans;
@@ -30,12 +31,16 @@
 	
     /* Scollbar */
     --scrollbar-thumb-color: rgba(127, 127, 127, 0.5);
-	--scrollbar-thumb-hover-color: #F07746;
+	--scrollbar-thumb-hover-color: var(--tree-background-color-selected);
 	
     /* Message Headers */
     --subject-line-font-size: 150%;
     --headers-background-color: #F2F1F0;
     --headers-text-color: var(--message-list-text-color);
+
+    /* Search Box */
+    --search-background-color: #fff;
+    --search-text-color: #000;
 }
 
 * {
@@ -85,79 +90,7 @@ menucaption[disabled="true"] label,
     color: grey !important;
 }
 
-/*     Folder Tree    */
 
-treechildren:-moz-tree-twisty {
-    width: 12px !important;
-    -moz-image-region: rect(0px 12px 12px 0px) !important;
-    -moz-appearance: none !important;
-    list-style-type: image !important;
-}
-
-#folderTree>hbox {
-    margin-top: 30px !important;
-}
-
-#folderTree>treechildren::-moz-tree-row {
-	margin-top: 0px !important;
-}
-
-#folderTree>treechildren::-moz-tree-row {
-    height: var(--folder-tree-row-height) !important;
-}
-
-#folderTree>treechildren::-moz-tree-row(selected) {
-    border: none !important;
-}
-
-#folderTree>treechildren::-moz-tree-cell-text(folderNameCol, newMessages-true),
-#folderTree>treechildren::-moz-tree-cell-text(folderNameCol, closed, subfoldersHaveUnreadMessages-true) {
-    color: inherit !important;
-    font-style: italic !important;
-}
-
-/*    Thread tree    */
-
-#threadTree>treechildren::-moz-tree-row {
-    height: var(--message-list-row-height) !important;
-    border: none !important;
-    border-bottom: 1px solid rgba(127, 127, 127, 0.2) !important;
-}
-
-#threadTree>treechildren::-moz-tree-row(selected) {
-    border: none !important;
-}
-
-#threadCols,
-#threadCols treecol,
-#threadCols treecolpicker {
-    -moz-appearance: none !important;
-}
-
-#threadCols treecol[sortDirection="ascending"] .treecol-sortdirection {
-    -moz-appearance: button-arrow-up !important;
-}
-
-#threadCols treecol[sortDirection="descending"] .treecol-sortdirection {
-    -moz-appearance: button-arrow-down !important;
-}
-
-#threadCols treecol,
-#threadCols treecolpicker {
-    color: var(--message-list-header-text-color) !important;
-    border: none !important;
-    padding: 3px !important;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    margin-top: 3px !important;
-    margin-bottom: 3px !important;
-    border-left: 1px solid rgba(127, 127, 127, 0.4) !important;
-    min-width: 21px !important;
-}
-
-#threadPane {
-    -moz-appearance: none !important;
-}
 
 /*    Scrollbar    */
 
@@ -196,56 +129,8 @@ thumb:hover {
     background: var(--scrollbar-thumb-hover-color) !important;
 }
 
-/*    Msg Header    */
-
-#msgHeaderView {
-    color: var(--headers-text-color) !important;
-    background-color: var(--headers-background-color) !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
-}
-
-.msgHeaderView-button {
-    min-width: 0px !important;
-    border-color: transparent !important;
-    background-color: transparent !important;
-    margin: 0px !important;
-}
-
-.msgHeaderView-button:hover {
-    border-color: rgba(0, 0, 0, 0.25) !important;
-}
-
-.msgHeaderView-button>label {
-    display: none;
-}
-
-#expandedHeader2Rows row {
-    display: block !important;
-}
-
-#expandedHeaderRows row *,
-#expandedHeader2Rows row * {
-    color: var(--headers-text-color) !important;
-}
-
-#expandedsubjectLabel,
-#expandedfromLabel {
-    display: none !important;
-}
-
-#expandedHeader2Rows #expandedreply-toRow {
-    display: none !important;
-}
-
-#expandedsubjectBox .headerValue {
-    font-size: var(--subject-line-font-size) !important;
-}
-
-.emailStar {
-    margin-inline-start: 2px !important;
-}
-
-menuseparator {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+/* Search Box */
+.searchInput {
+    background: var( --search-background-color);
+    color: var(--search-text-color);
 }

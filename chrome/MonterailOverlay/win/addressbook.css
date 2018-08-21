@@ -28,7 +28,7 @@
 
 #abResultsTree > treechildren {
   --treechildren-outline: none;
-  --treechildren-selectedColor: var(--folder-background-color-selected);
+  --treechildren-selectedColor: var(--tree-background-color-selected);
   --treechildren-2ndBorderColor: transparent;
   --treechildren-focusColor: transparent;
   --treechildren-selectedFocusColor: transparent;
@@ -37,8 +37,8 @@
   --treechildren-selectedBorder: transparent;
   --treechildren-selectedBottomBorder: transparent;
   --treechildren-selectedBackground: transparent;
-  --treechildren-currentFocusBorder: rgba(0,99,120,.7);
-  --treechildren-currentFocusBottomBorder: rgba(0,99,120,.7);
+  --treechildren-currentFocusBorder: var(--tree-background-color-selected);
+  --treechildren-currentFocusBottomBorder: var(--tree-background-color-selected);
   --treechildren-selectedFocusBorder: transparent;
   --treechildren-selectedFocusBottomBorder: transparent;
   --treechildren-selectedFocusBackground: transparent;
