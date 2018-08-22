@@ -87,7 +87,7 @@
 }
 
 toolbar>#button-chat[unreadMessages="true"] {
-    fill: #2d9aaf;
+    fill: var(--tree-background-color-selected);
 }
 
 toolbar[brighttext]>.toolbarbutton-1 {
@@ -111,16 +111,16 @@ toolbar[brighttext]>.toolbarbutton-1 {
 
 #folderTree>treechildren,
 #threadTree>treechildren {
-    --treechildren-selectedBackground: var(--folder-background-color-selected);
-    --treechildren-selectedFocusBackground: var(--folder-background-color-selected);
-    --treechildren-selectedFocusCurrentBackground: var(--folder-background-color-selected);
-    --treechildren-hoverSelectedBackground: var(--folder-background-color-selected);
+    --treechildren-selectedBackground: var(--tree-background-color-selected);
+    --treechildren-selectedFocusBackground: var(--tree-background-color-selected);
+    --treechildren-selectedFocusCurrentBackground: var(--tree-background-color-selected);
+    --treechildren-hoverSelectedBackground: var(--tree-background-color-selected);
 }
 
-#threadTree>treechildren
-{
-    --treechildren-hoverBackground: var(--folder-background-color-hover);
-    --treechildren-hoverCurrentBackground: var(--folder-background-color-hover);
+#threadTree>treechildren {
+    --treechildren-hoverBackground: var(--tree-background-color-hover);
+    --treechildren-hoverCurrentBackground: var(--tree-background-color-hover);
+    background-color: var(--thread-background-color);
 }
 
 #folderTree>treechildren {
@@ -147,4 +147,78 @@ toolbar[brighttext]>.toolbarbutton-1 {
 #folderPaneBox>#folderTree>treechildren::-moz-tree-image {
     width: 14px;
     height: 14px;
+}
+
+/*     Folder Tree sizes    */
+
+treechildren:-moz-tree-twisty {
+    width: 12px !important;
+    -moz-image-region: rect(0px 12px 12px 0px) !important;
+    -moz-appearance: none !important;
+    list-style-type: image !important;
+}
+
+#folderTree>hbox {
+    margin-top: 30px !important;
+}
+
+#folderTree>treechildren::-moz-tree-row {
+	margin-top: 0px !important;
+}
+
+#folderTree>treechildren::-moz-tree-row {
+    height: var(--folder-tree-row-height) !important;
+}
+
+#folderTree>treechildren::-moz-tree-row(selected) {
+    border: none !important;
+}
+
+#folderTree>treechildren::-moz-tree-cell-text(folderNameCol, newMessages-true),
+#folderTree>treechildren::-moz-tree-cell-text(folderNameCol, closed, subfoldersHaveUnreadMessages-true) {
+    color: #fff !important;
+    font-style: italic !important;
+}
+
+/*    Thread tree sizes   */
+
+#threadTree>treechildren::-moz-tree-row {
+    height: var(--message-list-row-height) !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.2) !important;
+}
+
+#threadTree>treechildren::-moz-tree-row(selected) {
+    border: none !important;
+}
+
+#threadCols,
+#threadCols treecol,
+#threadCols treecolpicker {
+    -moz-appearance: none !important;
+}
+
+#threadCols treecol[sortDirection="ascending"] .treecol-sortdirection {
+    -moz-appearance: button-arrow-up !important;
+}
+
+#threadCols treecol[sortDirection="descending"] .treecol-sortdirection {
+    -moz-appearance: button-arrow-down !important;
+}
+
+#threadCols treecol,
+#threadCols treecolpicker {
+    color: var(--message-list-header-text-color) !important;
+    border: none !important;
+    padding: 3px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+    border-left: 1px solid rgba(127, 127, 127, 0.4) !important;
+    min-width: 21px !important;
+}
+
+#threadPane {
+    -moz-appearance: none !important;
 }

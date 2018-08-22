@@ -8,17 +8,17 @@
   --treechildren-hoverColor: transparent;
   --treechildren-selectedBorder: transparent;
   --treechildren-selectedBottomBorder: transparent;
-  --treechildren-selectedImage:  var(--folder-background-color-selected);
+  --treechildren-selectedImage:  var(--tree-background-color-selected);
   --treechildren-selectedBackground: transparent;
-  --treechildren-currentFocusBorder: var(--folder-background-color-selected);
-  --treechildren-currentFocusBottomBorder: var(--folder-background-color-selected);
+  --treechildren-currentFocusBorder: var(--tree-background-color-selected);
+  --treechildren-currentFocusBottomBorder: var(--tree-background-color-selected);
   --treechildren-selectedFocusBorder: transparent;
   --treechildren-selectedFocusBottomBorder: transparent;
-  --treechildren-selectedFocusImage:  var(--folder-background-color-selected);
+  --treechildren-selectedFocusImage:  var(--tree-background-color-selected);
   --treechildren-selectedFocusBackground: transparent;
   --treechildren-selectedFocusCurrentBorder: transparent;
   --treechildren-selectedFocusCurrentBottomBorder: transparent;
-  --treechildren-selectedFocusCurrentImage:  var(--folder-background-color-selected);
+  --treechildren-selectedFocusCurrentImage:  var(--tree-background-color-selected);
   --treechildren-hoverBorder: transparent;
   --treechildren-hoverBottomBorder: transparent;
   --treechildren-hoverImage: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1));
@@ -27,7 +27,7 @@
   --treechildren-hoverCurrentImage: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3));
   --treechildren-hoverSelectedBorder: transparent;
   --treechildren-hoverSelectedBottomBorder: transparent;
-  --treechildren-hoverSelectedImage: linear-gradient(var(--folder-background-color-selected), var(--folder-background-color-selected));
+  --treechildren-hoverSelectedImage: linear-gradient(var(--tree-background-color-selected), var(--tree-background-color-selected));
 }
 
 #threadTree > treechildren {
@@ -40,26 +40,26 @@
   --treechildren-hoverColor: transparent;
   --treechildren-selectedBorder: transparent;
   --treechildren-selectedBottomBorder: transparent;
-  --treechildren-selectedImage:  var(--folder-background-color-selected);
+  --treechildren-selectedImage:  var(--tree-background-color-selected);
   --treechildren-selectedBackground: transparent;
-  --treechildren-currentFocusBorder: var(--folder-background-color-selected);
-  --treechildren-currentFocusBottomBorder: var(--folder-background-color-selected);
+  --treechildren-currentFocusBorder: var(--tree-background-color-selected);
+  --treechildren-currentFocusBottomBorder: var(--tree-background-color-selected);
   --treechildren-selectedFocusBorder: transparent;
   --treechildren-selectedFocusBottomBorder: transparent;
-  --treechildren-selectedFocusImage:  var(--folder-background-color-selected);
+  --treechildren-selectedFocusImage:  var(--tree-background-color-selected);
   --treechildren-selectedFocusBackground: transparent;
   --treechildren-selectedFocusCurrentBorder: transparent;
   --treechildren-selectedFocusCurrentBottomBorder: transparent;
-  --treechildren-selectedFocusCurrentImage:  var(--folder-background-color-selected);
+  --treechildren-selectedFocusCurrentImage:  var(--tree-background-color-selected);
   --treechildren-hoverBorder: transparent;
   --treechildren-hoverBottomBorder: transparent;
-  --treechildren-hoverImage: linear-gradient(var(--folder-background-color-hover), var(--folder-background-color-hover));
+  --treechildren-hoverImage: linear-gradient(var(--tree-background-color-hover), var(--tree-background-color-hover));
   --treechildren-hoverCurrentBorder: transparent;
   --treechildren-hoverCurrentBottomBorder: transparent;
-  --treechildren-hoverCurrentImage: linear-gradient(var(--folder-background-color-hover), var(--folder-background-color-hover));
+  --treechildren-hoverCurrentImage: linear-gradient(var(--tree-background-color-hover), var(--tree-background-color-hover));
   --treechildren-hoverSelectedBorder: transparent;
   --treechildren-hoverSelectedBottomBorder: transparent;
-  --treechildren-hoverSelectedImage: var(--folder-background-color-selected);
+  --treechildren-hoverSelectedImage: var(--tree-background-color-selected);
 }
 
 #titlebar-min,

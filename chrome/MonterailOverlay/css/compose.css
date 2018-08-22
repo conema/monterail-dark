@@ -43,3 +43,59 @@ toolbar[brighttext]>.toolbarbutton-1 {
     height: 16px !important;
     margin: 1px !important;
 }
+
+.emailDisplayButton:hover{
+    background-color: var(--tree-background-color-selected);
+}
+
+#msgHeaderView {
+    color: var(--headers-text-color) !important;
+    background-color: var(--headers-background-color) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
+}
+
+.msgHeaderView-button {
+    min-width: 0px !important;
+    border-color: transparent !important;
+    background-color: transparent !important;
+    margin: 0px !important;
+}
+
+.msgHeaderView-button:hover {
+    border-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.msgHeaderView-button>label {
+    display: none;
+}
+
+#expandedHeader2Rows row {
+    display: block !important;
+}
+
+#expandedHeaderRows row *,
+#expandedHeader2Rows row * {
+    color: var(--headers-text-color) !important;
+}
+
+#expandedsubjectLabel,
+#expandedfromLabel {
+    display: none !important;
+}
+
+#expandedHeader2Rows #expandedreply-toRow {
+    display: none !important;
+}
+
+#expandedsubjectBox .headerValue {
+    font-size: var(--subject-line-font-size) !important;
+}
+
+.emailStar {
+    margin-inline-start: 2px !important;
+}
+
+menuseparator {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}

@@ -8,10 +8,10 @@
 }
 
 #abResultsTree > treechildren {
-  --treechildren-selectedBackground: var(--folder-background-color-selected);
-  --treechildren-selectedFocusBackground: var(--folder-background-color-selected);
-  --treechildren-selectedFocusCurrentBackground: var(--folder-background-color-selected);
-  --treechildren-hoverBackground: var(--folder-background-color-hover);
-  --treechildren-hoverCurrentBackground: var(--folder-background-color-hover);
-  --treechildren-hoverSelectedBackground: var(--folder-background-color-selected);
+  --treechildren-selectedBackground: var(--tree-background-color-selected);
+  --treechildren-selectedFocusBackground: var(--tree-background-color-selected);
+  --treechildren-selectedFocusCurrentBackground: var(--tree-background-color-selected);
+  --treechildren-hoverBackground: var(--tree-background-color-hover);
+  --treechildren-hoverCurrentBackground: var(--tree-background-color-hover);
+  --treechildren-hoverSelectedBackground: var(--tree-background-color-selected);
 }
