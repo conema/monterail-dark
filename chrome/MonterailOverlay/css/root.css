@@ -218,15 +218,23 @@ calendar-list-tree > tree {
 #calendar-task-tree-detail treechildren::-moz-tree-cell-text,
 #calendar-task-tree-detail treechildren::-moz-tree-cell-text(selected, focus),
 #calendar-task-tree-detail treechildren::-moz-tree-cell-text(hover, selected),
-#calendar-task-tree-detail treechildren::-moz-tree-cell-text(hover, current) {
+#calendar-task-tree-detail treechildren::-moz-tree-cell-text(hover, current),
+#calendar-list-tree-widget treechildren::-moz-tree-cell-text(selected),
+#calendar-list-tree-widget treechildren::-moz-tree-cell-text(selected, focus),
+#calendar-list-tree-widget treechildren::-moz-tree-cell-text,
+#calendar-list-tree-widget treechildren::-moz-tree-cell-text(selected, focus),
+#calendar-list-tree-widget treechildren::-moz-tree-cell-text(hover, selected),
+#calendar-list-tree-widget treechildren::-moz-tree-cell-text(hover, current) {
     color: var(--thread-background-color);
 }
 
-#calendar-task-tree-detail treechildren::-moz-tree-cell-text(hover) {
+#calendar-task-tree-detail treechildren::-moz-tree-cell-text(hover),
+#calendar-list-tree-widget treechildren::-moz-tree-cell-text(hover) {
     color: #000;
 }
 
-#calendar-task-tree-detail treechildren {
+#calendar-task-tree-detail treechildren,
+#calendar-list-tree-widget treechildren {
     color: var(--thread-background-color) !important;
     --treechildren-currentColor: var(--tree-background-color-selected);
     --treechildren-hoverBackground: var(--tree-background-color-hover);
