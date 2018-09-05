@@ -64,3 +64,16 @@
 .tab-background-middle[selected="true"] {
     background-color: var(--background-color-light);
 }
+
+/* Calendar */
+.miniday-nav-buttons {
+    list-style-image: url("nav-arrow-white.svg");
+}
+
+#today-button {
+    list-style-image: url("nav-today-white.svg");
+}
+
+#todaypane-new-event-button {
+    list-style-image: url("addAsEvent-white.svg") !important;
+}
