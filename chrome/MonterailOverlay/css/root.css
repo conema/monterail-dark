@@ -233,10 +233,16 @@ calendar-list-tree > tree {
     color: #000;
 }
 
+#calendar-task-tree-detail treechildren::-moz-tree-row(odd),
+#calendar-list-tree-widget treechildren::-moz-tree-row(odd) {
+  background: var(--background-color);
+}
+
 #calendar-task-tree-detail treechildren,
 #calendar-list-tree-widget treechildren {
     color: var(--thread-background-color) !important;
-    --treechildren-currentColor: var(--tree-background-color-selected);
+    background: var(--background-color);
+    --treechildren-currentColor: var(--background-color);
     --treechildren-hoverBackground: var(--tree-background-color-hover);
     --treechildren-hoverCurrentBackground: var(--tree-background-color-hover);
     --treechildren-selectedBackground: var(--tree-background-color-selected);
@@ -251,7 +257,8 @@ calendar-list-tree > tree {
     --treechildren-hoverImage: linear-gradient(var(--tree-background-color-hover), var(--tree-background-color-hover));
 }
 
-#calendar-task-tree-detail treechildren::-moz-tree-row(selected) {
+#calendar-task-tree-detail treechildren::-moz-tree-row(selected),
+#calendar-list-tree-widget treechildren::-moz-tree-row(selected) {
     border-color: var(--tree-background-color-selected);
     background-color: var(--tree-background-color-selected);
 }
@@ -267,7 +274,8 @@ calendar-list-tree > tree {
     background-color: var(--tree-background-color-selected);
 }
 
-#calendar-task-tree-detail treechildren::-moz-tree-row(hover) {
+#calendar-task-tree-detail treechildren::-moz-tree-row(hover),
+#calendar-list-tree-widget treechildren::-moz-tree-row(hover) {
     border-color: var(--tree-background-color-hover);
     background-color: var(--tree-background-color-hover);
 }
