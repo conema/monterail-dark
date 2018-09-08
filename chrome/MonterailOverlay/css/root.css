@@ -185,32 +185,20 @@ thumb:hover {
 
 /* Lightning */
 
-#ltnSidebar {
+#ltnSidebar, #unifinder-todo-tree > .calendar-task-tree {
     background-color: var(--background-color);
 }
 
-minimonth {
+minimonth, #unifinder-searchBox {
     background: var(--background-color-light);
 }
 
-treenode-checkbox {
+treenode-checkbox, #task-filtertree-pane, .checkbox-label {
     color: #fff;
 }
 
 calendar-list-tree > tree {
     background: transparent;
-}
-
-.checkbox-label {
-    color: #ffff;
-}
-
-#unifinder-searchBox {
-    background: var(--background-color-light);
-}
-
-#unifinder-todo-tree > .calendar-task-tree {
-    background: var(--background-color);
 }
 
 #calendar-task-tree-detail treechildren::-moz-tree-cell-text(selected),
