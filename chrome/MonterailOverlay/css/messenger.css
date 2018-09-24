@@ -30,11 +30,16 @@
 
 .mail-toolbox:not(:-moz-lwtheme),
 #mailContent>#mail-toolbox:not(:-moz-lwtheme),
-.contentTabInstance>.contentTabToolbox:not(:-moz-lwtheme) {
+.contentTabInstance>.contentTabToolbox:not(:-moz-lwtheme),
+#folderpane-mode-selector-menulist{
     box-shadow: none;
     background-image: none;
     background-color: var(--background-color-light);
     color: var(--message-list-text-color);
+}
+
+#folderpane-mode-selector-menulist {
+    border: 0;
 }
 
 #attachmentView>#attachmentBar {

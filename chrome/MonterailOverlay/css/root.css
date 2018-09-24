@@ -191,7 +191,7 @@ thumb:hover {
     background-color: var(--background-color);
 }
 
-minimonth, #unifinder-searchBox {
+minimonth, #unifinder-searchBox, #task-addition-box {
     background: var(--background-color-light);
 }
 
