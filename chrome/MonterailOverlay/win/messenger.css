@@ -30,18 +30,20 @@
   --treechildren-hoverSelectedImage: linear-gradient(var(--tree-background-color-selected), var(--tree-background-color-selected));
 }
 
-#threadTree > treechildren {
+#threadTree > treechildren,
+.calendar-task-tree > treechildren, 
+#unifinder-search-results-tree > treechildren {
   --treechildren-outline: none;
-  --treechildren-selectedColor: transparent;
+  --treechildren-selectedColor: var(--tree-background-color-selected);
   --treechildren-2ndBorderColor: transparent;
   --treechildren-focusColor: transparent;
-  --treechildren-selectedFocusColor: transparent;
+  --treechildren-selectedFocusColor: var(--tree-background-color-selected);
   --treechildren-currentColor: transparent;
   --treechildren-hoverColor: transparent;
   --treechildren-selectedBorder: transparent;
   --treechildren-selectedBottomBorder: transparent;
-  --treechildren-selectedImage:  var(--tree-background-color-selected);
-  --treechildren-selectedBackground: transparent;
+  --treechildren-selectedImage:  linear-gradient(var(--tree-background-color-selected), var(--tree-background-color-selected));
+  --treechildren-selectedBackground: var(--tree-background-color-selected);
   --treechildren-currentFocusBorder: var(--tree-background-color-selected);
   --treechildren-currentFocusBottomBorder: var(--tree-background-color-selected);
   --treechildren-selectedFocusBorder: transparent;
