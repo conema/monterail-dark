@@ -301,6 +301,10 @@ treechildren:-moz-tree-twisty {
     background-color: var(--background-color);
 }
 
+#unifinder-todo-tree treecols {
+    background: var(--background-color-light);
+}
+
 minimonth, #unifinder-searchBox, #task-addition-box {
     background: var(--background-color-light);
 }
