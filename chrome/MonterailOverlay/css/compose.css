@@ -10,7 +10,8 @@
     -moz-appearance: none;
 }
 
-#compose-toolbox>#composeToolbar2:not(:-moz-lwtheme){
+#compose-toolbox>#composeToolbar2:not(:-moz-lwtheme),
+#compose-toolbox>toolbar[id^="__customToolbar"] {
     background-color: var(--background-color);
     color: #fff;
     -moz-appearance: none;
