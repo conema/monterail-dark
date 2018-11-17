@@ -131,10 +131,19 @@ toolbar[brighttext]>.toolbarbutton-1 {
 #calendar-task-tree treechildren::-moz-tree-row(odd),
 #unifinder-search-results-tree>treechildren,
 #unifinder-search-results-tree>treechildren::-moz-tree-row(even),
-#unifinder-search-results-tree>treechildren::-moz-tree-row(odd) {
+#unifinder-search-results-tree>treechildren::-moz-tree-row(odd),
+#threadTree treechildren::-moz-tree-row(container) {
     --treechildren-hoverBackground: var(--tree-background-color-hover);
     --treechildren-hoverCurrentBackground: var(--tree-background-color-hover);
     background-color: var(--thread-background-color);
+}
+
+#threadTree treechildren::-moz-tree-row(container, hover) {
+    background: var(--tree-background-color-hover) !important;
+}
+
+#threadTree treechildren::-moz-tree-row(container, selected) {
+    background: var(--tree-background-color-selected) !important;
 }
 
 #folderTree>treechildren {
