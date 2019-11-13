@@ -1,0 +1,67 @@
+@import url(chrome://MonterailOverlay/skin/root.css);
+
+#dirTree > treechildren {
+  --treechildren-hoverBackground: rgba(255,255,255,.1);
+  --treechildren-hoverCurrentBackground: rgba(255,255,255,.3);
+  --treechildren-selectedBackground: var(--tree-background-color-selected);
+  --treechildren-selectedFocusBackground: var(--tree-background-color-selected);
+  --treechildren-selectedFocusCurrentBackground: var(--tree-background-color-selected);
+  --treechildren-hoverSelectedBackground: var(--tree-background-color-selected);
+}
+
+#abResultsTree > treechildren {
+  --treechildren-selectedBackground: var(--tree-background-color-selected);
+  --treechildren-selectedFocusBackground: var(--tree-background-color-selected);
+  --treechildren-selectedFocusCurrentBackground: var(--tree-background-color-selected);
+  --treechildren-hoverBackground: var(--tree-background-color-hover);
+  --treechildren-hoverCurrentBackground: var(--tree-background-color-hover);
+  --treechildren-hoverSelectedBackground: var(--tree-background-color-selected);
+}
+
+#ab-toolbox > #addrbook-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-window-inactive) {
+  color: #fff !important;
+  background-color: var(--background-color);
+}
+
+#ab-toolbox > #addrbook-toolbar-menubar2:not(:-moz-lwtheme):-moz-window-inactive {
+  color: #ddd !important;
+  background-color: var(--background-color-inactive);
+}
+
+#menubar-items > #mail-menubar > menu:not([disabled="true"])[_moz-menuactive="true"] {
+  color: #fff !important;
+}
+
+#dirTreeBox > #dirTree {
+  background-color: var(--background-color);
+}
+
+#dirTreeBox > #dirTree:-moz-window-inactive {
+  background-color: var(--background-color);
+}
+
+#dirTree>treechildren::-moz-tree-row {
+  height: var(--folder-tree-row-height) !important;
+}
+
+#abResultsTree > treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected),
+#abResultsTree > treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected, focus),
+#dirTree > treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text,
+#dirTree > treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected, focus) {
+  color: #fff;
+}
+
+#dirTree > treechildren::-moz-tree-twisty {
+  -moz-appearance: none;
+  padding-inline-start: 5px;
+  padding-inline-end: 5px;
+  padding-top: 1px;
+  width: 9px;
+  fill: #fff;
+  list-style-image: url("chrome:icons/twisty.svg");
+}
+
+#dirTree > treechildren::-moz-tree-twisty(open) {
+  -moz-appearance: none;
+  list-style-image: url("chrome:icons/twisty-open.svg");
+}

@@ -1,0 +1,37 @@
+@import url(chrome://MonterailOverlay/skin/root.css);
+
+/*    Scrollbar    */
+scrollbar {
+    margin-right: 5px !important;
+    width: 10px !important;
+    max-width: 10px !important;
+    -moz-appearance: none !important;
+    background: none !important;
+    border: none !important;
+}
+
+scrollbarbutton {
+    width: 10px !important;
+    max-width: 10px !important;
+}
+
+slider {
+    width: 10px !important;
+    max-width: 10px !important;
+    -moz-appearance: none !important;
+    background: none !important;
+    border: none !important;
+}
+
+thumb {
+    width: 10px !important;
+    max-width: 10px !important;
+    -moz-appearance: none !important;
+    min-height: 100px !important;
+    border: none !important;
+    background: var(--scrollbar-thumb-color) !important;
+}
+
+thumb:hover {
+    background: var(--scrollbar-thumb-hover-color) !important;
+}

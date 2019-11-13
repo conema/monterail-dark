@@ -1,0 +1,35 @@
+@import url("chrome://messenger/skin/glodaFacetView.css");
+@import url(chrome://MonterailOverlay/skin/root.css);
+
+#main-column, .message, .results-message-header {
+    background: var(--thread-background-color);
+}
+
+.message, .message-body, .message-meta, .message-recipients, .explanation-fulltext-term, .results-message-header, .results-message-count, .bar:hover > .bar-link {
+    color: var(--message-list-text-color);
+}
+
+.message-body-fulltext-match {
+    background-color: rgb(205, 214, 224);
+}
+
+.facets-sidebar {
+    background-color: var(--background-color);
+}
+
+.facets-sidebar *, .bar-count {
+    color: #fff;
+}
+
+.bar-link {
+    color: var(--link-color);
+}
+
+.bar:hover {
+    background: var(--tree-background-color-hover);
+}
+
+.bar:focus, .bar[selected="true"] {
+    background: var(--tree-background-color-selected);
+    border: 0;
+}
