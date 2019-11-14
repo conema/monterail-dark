@@ -9,16 +9,16 @@
   -moz-appearance: none;
 }
 
-#titlebar:not(:-moz-lwtheme):not(:-moz-window-inactive),
-#navigation-toolbox > #tabs-toolbar:not(:-moz-lwtheme):not(:-moz-window-inactive),
-#navigation-toolbox > #mail-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-window-inactive) {
+#titlebar:not(:-moz-window-inactive),
+#navigation-toolbox > #tabs-toolbar:not(:-moz-window-inactive),
+#navigation-toolbox > #mail-toolbar-menubar2:not(:-moz-window-inactive) {
   color: #fff;
   background-color: var(--background-color) !important;
 }
 
-#titlebar:not(:-moz-lwtheme):-moz-window-inactive,
-#navigation-toolbox > #tabs-toolbar:not(:-moz-lwtheme):-moz-window-inactive,
-#navigation-toolbox > #mail-toolbar-menubar2:not(:-moz-lwtheme):-moz-window-inactive {
+#titlebar:-moz-window-inactive,
+#navigation-toolbox > #tabs-toolbar:-moz-window-inactive,
+#navigation-toolbox > #mail-toolbar-menubar2:-moz-window-inactive {
   color: #ddd;
   background-color: var(--background-color-inactive);
 }
@@ -29,7 +29,7 @@
   color: inherit;
 }
 
-.tabmail-tab:not([selected]):not(:-moz-lwtheme) > .tab-stack > .tab-content > .tab-label-container,
+.tabmail-tab:not([selected]) > .tab-stack > .tab-content > .tab-label-container,
 .tabmail-tab > .tab-stack > .tab-content:not([selected=true]) > .tab-text {
   color: inherit;
 }

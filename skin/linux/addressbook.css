@@ -2,12 +2,12 @@
   -moz-appearance: none;
 }
 
-#ab-toolbox > #addrbook-toolbar-menubar2:not(:-moz-lwtheme):not(:-moz-window-inactive) {
+#ab-toolbox > #addrbook-toolbar-menubar2:not(:-moz-window-inactive) {
   color: #fff;
   background-color: var(--background-color);
 }
 
-#ab-toolbox > #addrbook-toolbar-menubar2:not(:-moz-lwtheme):-moz-window-inactive {
+#ab-toolbox > #addrbook-toolbar-menubar2:-moz-window-inactive {
   color: #ddd;
   background-color: var(--background-color-inactive);
 }

@@ -105,7 +105,7 @@
   padding-top: 0;
 }
 
-#messengerWindow > #navigation-toolbox > #mail-toolbar-menubar2:not(:-moz-lwtheme) {
+#messengerWindow > #navigation-toolbox > #mail-toolbar-menubar2 {
   color: inherit;
   background-color: transparent;
   border-bottom-width: 0;

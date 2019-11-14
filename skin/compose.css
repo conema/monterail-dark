@@ -2,28 +2,62 @@
 @import url(chrome://MonterailOverlay/skin/icons/css/compose.css);
 @import url(chrome://MonterailOverlay/skin/root.css);
 
-#headers-box>#MsgHeadersToolbar:not(:-moz-lwtheme),
-#FormatToolbox>#FormatToolbar:not(:-moz-lwtheme) {
+
+#msgIdentity,
+textbox.textbox-addressingWidget,
+.dummy-row-cell:last-child,
+#msgSubject {
+    color: #000 !important;
+}
+
+#appcontent {
+    border: 0;
+}
+
+#msgIdentity:hover,
+#msgSubject:hover,
+textbox.textbox-addressingWidget:hover {
+    background: transparent !important;
+    border-bottom: 1px solid var(--composer-header-border-color) !important;
+}
+
+textbox.textbox-addressingWidget[focused="true"],
+#msgSubject[focused="true"],
+#msgIdentity[focused="true"] {
+    background: #fff !important;
+}
+
+#status-bar,
+#compose-toolbar-sizer {
+    background-color: var(--background-color-light) !important;
+    color: var(--message-list-text-color) !important;
+    background-image: none !important;
+}
+
+#headers-box>#MsgHeadersToolbar,
+#FormatToolbox>#FormatToolbar {
     color: var(--message-list-text-color);
     background-color: var(--background-color-light);
     -moz-appearance: none;
 }
 
-#compose-toolbox>#compose-toolbar-menubar2:not(:-moz-lwtheme),
-#compose-toolbox>#composeToolbar2:not(:-moz-lwtheme),
+#compose-toolbox>#compose-toolbar-menubar2,
+#compose-toolbox>#composeToolbar2,
 #compose-toolbox>toolbar[id^="__customToolbar"] {
     background-color: var(--background-color);
     color: #fff;
     -moz-appearance: none;
 }
 
-#compose-toolbox>#compose-toolbar-menubar2:not(:-moz-lwtheme):-moz-window-inactive,
-#compose-toolbox > #composeToolbar2:not(:-moz-lwtheme):-moz-window-inactive {
+#compose-toolbox>#compose-toolbar-menubar2:-moz-window-inactive,
+#compose-toolbox > #composeToolbar2:-moz-window-inactive,
+#menubar-items > #mail-menubar > menu:-moz-window-inactive {
     color: #ddd !important;
     background-color: var(--background-color-inactive) !important;
 }
 
-#menubar-items > #mail-menubar > menu:not([disabled="true"])[_moz-menuactive="true"] {
+#menubar-items > #mail-menubar > menu:not([disabled="true"])[_moz-menuactive="true"],
+#menubar-items > #mail-menubar > menu {
     color: #fff;
 }
 
@@ -31,8 +65,8 @@
     -moz-context-properties: fill;
 }
 
-.toolbarbutton-1:not(:-moz-lwtheme),
-.toolbarbutton-menubutton-button:not(:-moz-lwtheme) {
+.toolbarbutton-1,
+.toolbarbutton-menubutton-button {
     color: #fff;
     fill: #fff;
 }
