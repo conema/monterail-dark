@@ -2,7 +2,6 @@
 @import url(chrome://MonterailOverlay/skin/icons/css/compose.css);
 @import url(chrome://MonterailOverlay/skin/root.css);
 
-#compose-toolbox>#compose-toolbar-menubar2:not(:-moz-lwtheme),
 #headers-box>#MsgHeadersToolbar:not(:-moz-lwtheme),
 #FormatToolbox>#FormatToolbar:not(:-moz-lwtheme) {
     color: var(--message-list-text-color);
@@ -10,11 +9,22 @@
     -moz-appearance: none;
 }
 
+#compose-toolbox>#compose-toolbar-menubar2:not(:-moz-lwtheme),
 #compose-toolbox>#composeToolbar2:not(:-moz-lwtheme),
 #compose-toolbox>toolbar[id^="__customToolbar"] {
     background-color: var(--background-color);
     color: #fff;
     -moz-appearance: none;
+}
+
+#compose-toolbox>#compose-toolbar-menubar2:not(:-moz-lwtheme):-moz-window-inactive,
+#compose-toolbox > #composeToolbar2:not(:-moz-lwtheme):-moz-window-inactive {
+    color: #ddd !important;
+    background-color: var(--background-color-inactive) !important;
+}
+
+#menubar-items > #mail-menubar > menu:not([disabled="true"])[_moz-menuactive="true"] {
+    color: #fff;
 }
 
 .toolbarbutton-1 {

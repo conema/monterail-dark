@@ -4,6 +4,10 @@
 @import url(chrome://MonterailOverlay-OS/skin/messenger.css);
 @import url(chrome://MonterailOverlay/skin/root.css);
 
+#threadTree > treechildren {
+    color: #000 !important;
+}
+
 #messengerWindow>#navigation-toolbox:not(:-moz-lwtheme):not(:-moz-window-inactive) {
     color: #fff !important;
     background-color: var(--background-color) !important;
