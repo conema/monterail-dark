@@ -16,11 +16,6 @@ skin	MonterailOverlay-OS	classic/1.0	skin/win/	os=WINNT
 
 #overrides
 override chrome://messenger/skin/multimessageview.css				chrome://MonterailOverlay/skin/multiMessage.css
-override chrome://messenger/skin/icons/caption-buttons.svg#minimize	chrome://MonterailOverlay/skin/icons/caption-buttons.svg#minimize	appversion<=55.0a1
-override chrome://messenger/skin/icons/caption-buttons.svg#maximize	chrome://MonterailOverlay/skin/icons/caption-buttons.svg#maximize	appversion<=55.0a1
-override chrome://messenger/skin/icons/caption-buttons.svg#restore	chrome://MonterailOverlay/skin/icons/caption-buttons.svg#restore	appversion<=55.0a1
-override chrome://messenger/skin/icons/caption-buttons.svg#close	chrome://MonterailOverlay/skin/icons/caption-buttons.svg#close		appversion<=55.0a1
-override chrome://messenger/skin/tabs/selected-start.svg			chrome://MonterailOverlay/skin/icons/selected-start.svg			appversion<=57.0a1
 override chrome://messenger/skin/tabs/selected-end.svg				chrome://MonterailOverlay/skin/icons/selected-end.svg
 override chrome://messagebody/skin/messageBody.css					chrome://messenger/skin/messageBody.css
 override chrome://global/skin/filefield.css							chrome://messenger/skin/filefield.css					os=Linux
