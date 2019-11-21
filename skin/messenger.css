@@ -4,11 +4,6 @@
 @import url(chrome://MonterailOverlay-OS/skin/messenger.css);
 @import url(chrome://MonterailOverlay/skin/root.css);
 
-#threadTree > treechildren::-moz-tree-cell-text,
-#threadCols {
-    color: #000 !important;
-}
-
 #header-view-toolbox .toolbarbutton-icon {
     fill: #666;
 }
@@ -154,26 +149,33 @@ toolbar[brighttext]>.toolbarbutton-1 {
     --treechildren-hoverSelectedBackground: var(--tree-background-color-selected);
 }
 
-#threadTree>treechildren,  
 .calendar-task-tree>treechildren, 
 #calendar-task-tree treechildren::-moz-tree-row(even),
 #calendar-task-tree treechildren::-moz-tree-row(odd),
 #unifinder-search-results-tree>treechildren,
 #unifinder-search-results-tree>treechildren::-moz-tree-row(even),
 #unifinder-search-results-tree>treechildren::-moz-tree-row(odd),
-#threadTree treechildren::-moz-tree-row(container) {
+#threadTree treechildren,
+#threadTree treechildren::-moz-tree-row(container),
+#threadContentArea>#threadTree {
     --treechildren-hoverBackground: var(--tree-background-color-hover);
     --treechildren-hoverCurrentBackground: var(--tree-background-color-hover);
-    background-color: var(--thread-background-color);
+    background-color: var(--thread-background-color) !important;
 }
 
-#threadTree treechildren::-moz-tree-row(container, hover) {
+#threadTree treechildren::-moz-tree-row(container, hover),
+#threadTree treechildren::-moz-tree-row(hover) {
     background: var(--tree-background-color-hover) !important;
 }
 
 #threadTree treechildren::-moz-tree-row(selected),
 #threadTree treechildren::-moz-tree-row(container, selected) {
     background: var(--tree-background-color-selected) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(untagged),
+#threadCols {
+    color: #000 !important;
 }
 
 #folderTree>treechildren {
@@ -183,10 +185,6 @@ toolbar[brighttext]>.toolbarbutton-1 {
 
 #folderPaneBox>#folderTree:-moz-window-inactive {
     background-color: var(--background-color-inactive);
-}
-
-#threadContentArea>#threadTree {
-    background-color: #fff;
 }
 
 #threadTree>treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected),
