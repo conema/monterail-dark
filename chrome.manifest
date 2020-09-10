@@ -9,10 +9,9 @@ overlay chrome://messenger/content/customizeToolbar.xul						chrome://MonterailO
 content	MonterailOverlay	content/
 
 #register theme
-# content	MonterailOverlay-skin		skin/
-#chrome	MonterailOverlay-OS	classic/1.0	skin/linux/
-#chrome	MonterailOverlay-OS	classic/1.0	skin/mac/	os=Darwin
-content	MonterailOverlay-OS	content/skin/win/
+content MonterailOverlay-OS	content/skin/linux/
+content MonterailOverlay-OS	content/skin/mac/	os=Darwin
+content MonterailOverlay-OS	content/skin/win/	os=WINNT
 
 #overrides
 override chrome://messenger/skin/multimessageview.css				chrome://MonterailOverlay/content/skin/multiMessage.css
