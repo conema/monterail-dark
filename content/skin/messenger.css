@@ -1,8 +1,8 @@
 /* :::: Credit where credit is due :::: */
 /* Sharebird: light-weight theme idea */
 
-@import url(chrome://MonterailOverlay-OS/content/skin/messenger.css);
-@import url(chrome://MonterailOverlay/content/skin/root.css);
+@import url("chrome://MonterailOverlay-OS/content/skin/messenger.css");
+@import url("chrome://MonterailOverlay/content/skin/root.css");
 
 #header-view-toolbox .toolbarbutton-icon {
     fill: #666;
@@ -401,9 +401,11 @@ calendar-list-tree > tree {
 #calendar-list-tree-widget treechildren::-moz-tree-row(odd),
 #calendar-task-tree-detail treechildren::-moz-tree-row(even),
 #calendar-list-tree-widget treechildren::-moz-tree-row(even) {
-  background: var(--background-color);
+  background: var(--background-color) !important;
   color: var(--thread-background-color) !important;
 }
+
+
 
 #calendar-task-tree-detail treechildren,
 #calendar-list-tree-widget treechildren,

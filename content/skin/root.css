@@ -128,3 +128,7 @@ menucaption[disabled="true"] label,
 #facet-date text {
     fill: var(--headers-background-color);
 }
+
+#titlebar-min, #titlebar-max, #titlebar-close {
+    color: #fff;
+}
