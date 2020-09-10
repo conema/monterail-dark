@@ -9,15 +9,14 @@ overlay chrome://messenger/content/customizeToolbar.xul						chrome://MonterailO
 content	MonterailOverlay	content/
 
 #register theme
-skin	MonterailOverlay	classic/1.0	skin/
-skin	MonterailOverlay-OS	classic/1.0	skin/linux/
-skin	MonterailOverlay-OS	classic/1.0	skin/mac/	os=Darwin
-skin	MonterailOverlay-OS	classic/1.0	skin/win/	os=WINNT
+content MonterailOverlay-OS	content/skin/linux/
+content MonterailOverlay-OS	content/skin/mac/	os=Darwin
+content MonterailOverlay-OS	content/skin/win/	os=WINNT
 
 #overrides
-override chrome://messenger/skin/multimessageview.css				chrome://MonterailOverlay/skin/multiMessage.css
-override chrome://messenger/skin/tabs/selected-end.svg				chrome://MonterailOverlay/skin/icons/selected-end.svg
+override chrome://messenger/skin/multimessageview.css				chrome://MonterailOverlay/content/skin/multiMessage.css
+override chrome://messenger/skin/tabs/selected-end.svg				chrome://MonterailOverlay/content/skin/icons/selected-end.svg
 override chrome://messagebody/skin/messageBody.css					chrome://messenger/skin/messageBody.css
-override chrome://global/skin/filefield.css							chrome://messenger/skin/filefield.css					os=Linux
-override chrome://messenger/skin/glodaFacetView.css              	chrome://MonterailOverlay/skin/searchWindow.css
-#override chrome://global/skin/scrollbars.css						chrome://MonterailOverlay/skin/scrollbars.css
+#override chrome://global/skin/filefield.css							chrome://messenger/skin/filefield.css					os=Linux
+override chrome://messenger/skin/glodaFacetView.css              	chrome://MonterailOverlay/content/skin/searchWindow.css
+#override chrome://global/skin/scrollbars.css						chrome://MonterailOverlay/content/skin/scrollbars.css

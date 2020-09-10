@@ -1,4 +1,4 @@
-@import url(chrome://MonterailOverlay/skin/root.css);
+@import url(chrome://MonterailOverlay/content/skin/root.css);
 
 #dirTree > treechildren {
   --treechildren-hoverBackground: rgba(255,255,255,.1);
