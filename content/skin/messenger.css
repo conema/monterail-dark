@@ -1,7 +1,6 @@
 /* :::: Credit where credit is due :::: */
 /* Sharebird: light-weight theme idea */
 
-@import url("chrome://MonterailOverlay-OS/content/skin/messenger.css");
 @import url("chrome://MonterailOverlay/content/skin/root.css");
 
 #header-view-toolbox .toolbarbutton-icon {
