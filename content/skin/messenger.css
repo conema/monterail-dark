@@ -163,6 +163,12 @@ toolbar[brighttext]>.toolbarbutton-1 {
     background-color: var(--thread-background-color) !important;
 }
 
+#threadTree > treechildren::-moz-tree-cell-text(unread),
+#threadTree > treechildren::-moz-tree-cell(unread) {
+    font-family: var(--default-bold-font);
+    font-weight: 600 !important;
+}
+
 #threadTree treechildren::-moz-tree-row(container, hover),
 #threadTree treechildren::-moz-tree-row(hover) {
     background: var(--tree-background-color-hover) !important;
