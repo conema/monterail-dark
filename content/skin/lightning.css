@@ -159,8 +159,15 @@ treenode-checkbox,
     background-color: var(--background-color) !important;
 }
 
-.today-subpane {
+.today-subpane,
+#tomorrow-header,
+#nextweek-header {
     color: #fff;
+}
+
+#todaypane-new-event-button:hover {
+    color: #fff !important;
+    cursor: pointer;
 }
 
 #todaypane-new-event-button {
@@ -170,7 +177,7 @@ treenode-checkbox,
 }
 
 #agenda-listbox {
-    background-color: var(--background-color);
+    background-color: var(--background-color) !important;
     color: #fff;
 }
 
