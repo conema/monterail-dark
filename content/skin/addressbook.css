@@ -1,4 +1,5 @@
 @import url(chrome://MonterailOverlay/content/skin/root.css);
+@import url(chrome://MonterailOverlay/content/skin/icons/css/adressbook.css);
 
 #dirTree > treechildren {
   --treechildren-hoverBackground: rgba(255,255,255,.1);
@@ -48,7 +49,7 @@
 #abResultsTree > treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected, focus),
 #dirTree > treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text,
 #dirTree > treechildren:not(.autocomplete-treebody)::-moz-tree-cell-text(selected, focus) {
-  color: #fff;
+  color: #fff !important;
 }
 
 #dirTree > treechildren::-moz-tree-twisty {
