@@ -9,7 +9,7 @@
   --treechildren-selectedBorder: transparent;
   --treechildren-selectedBottomBorder: transparent;
   --treechildren-selectedImage:  var(--tree-background-color-selected);
-  --treechildren-selectedBackground: transparent;
+  --treechildren-selectedBackground: var(--tree-background-color-selected);
   --treechildren-currentFocusBorder: var(--tree-background-color-selected);
   --treechildren-currentFocusBottomBorder: var(--tree-background-color-selected);
   --treechildren-selectedFocusBorder: transparent;
