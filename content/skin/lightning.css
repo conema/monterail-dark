@@ -200,7 +200,8 @@ treenode-checkbox,
 .agenda-checkbox[selected="true"],
 .agenda-container-box[selected="true"][current="true"],
 .agenda-allday-container-box[selected="true"][current="true"],
-.agenda-checkbox[selected="true"][current="true"] {
+.agenda-checkbox[selected="true"][current="true"],
+#agenda-listbox > richlistitem[selected="true"] {
     background-color: var(--tree-background-color-selected) !important;
     color: #fff;
 }
